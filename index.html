@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="My Office - professional office furniture and workspace solutions in Newtown, Johannesburg. Order directly on WhatsApp.">
+<title>My Office | Office Furniture & Workspace Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17202a;--muted:#667085;--paper:#f7f5f0;--card:#fff;--accent:#b77935;--line:#e7e1d8;--dark:#151515;--green:#25d366}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+a{color:inherit;text-decoration:none} img{display:block;width:100%;height:100%;object-fit:cover}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:var(--dark);color:#fff;font-size:.85rem;padding:9px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;align-items:center}
+nav{position:sticky;top:0;z-index:50;background:rgba(247,245,240,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:700;letter-spacing:.03em;font-size:1.15rem} .brand span{color:var(--accent)}
+.navlinks{display:flex;gap:26px;font-size:.93rem;font-weight:600} .navlinks a:hover{color:var(--accent)}
+.nav-cta{background:var(--dark);color:white;padding:11px 17px;border-radius:999px}
+.hero{min-height:620px;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(110deg,rgba(16,20,22,.94),rgba(16,20,22,.52)),url('images/product-01.jpg') center/cover}
+.hero-content{padding:90px 0;color:#fff;max-width:780px}
+.kicker{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:700;color:#e3bd91;margin-bottom:18px}
+h1,h2{font-family:'Playfair Display',serif;line-height:1.05;margin:0 0 20px} h1{font-size:clamp(3rem,7vw,6rem);max-width:800px} h2{font-size:clamp(2.2rem,4vw,3.6rem)}
+.hero p{font-size:1.1rem;max-width:640px;color:#eee;margin:0 0 30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap} .btn{padding:13px 20px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:var(--accent);color:#fff} .btn-light{border:1px solid rgba(255,255,255,.45);color:#fff}
+.section{padding:90px 0} .section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}
+.section-head p{max-width:500px;color:var(--muted);margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.stat{padding:30px;border-right:1px solid var(--line)} .stat:last-child{border:0} .stat strong{display:block;font-size:1.7rem} .stat span{color:var(--muted);font-size:.9rem}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product-card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 7px 24px rgba(0,0,0,.04);transition:.25s}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(0,0,0,.08)}
+.product-image{aspect-ratio:4/3;background:#eee;overflow:hidden} .product-image img{transition:transform .45s} .product-card:hover img{transform:scale(1.035)}
+.product-info{padding:20px} .product-tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:700}
+.product-info h3{margin:7px 0 8px;font-size:1.05rem} .product-info p{color:var(--muted);font-size:.9rem;margin:0 0 18px}
+.order-btn{display:flex;justify-content:space-between;align-items:center;background:#17202a;color:white;padding:11px 14px;border-radius:10px;font-weight:700;font-size:.9rem} .order-btn:hover{background:#263543}
+.about{background:#1a1b1c;color:#fff} .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center} .about p{color:#c9c9c9}
+.about-list{display:grid;gap:12px;margin-top:25px} .about-list div{border:1px solid #343536;border-radius:12px;padding:14px 16px}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px} .contact-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px}
+.contact-row{display:flex;gap:15px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line)} .contact-row:last-child{border:0}
+.icon{width:40px;height:40px;border-radius:12px;background:#f0e9df;display:grid;place-items:center;font-weight:800;color:var(--accent);flex:0 0 auto}
+.whatsapp{background:var(--green);color:#072d14;padding:16px 20px;border-radius:12px;font-weight:800;display:block;text-align:center;margin-top:18px}
+footer{background:#111;color:#aaa;padding:35px 0;font-size:.85rem} footer .container{display:flex;justify-content:space-between;gap:20px}
+.float-wa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:var(--green);display:grid;place-items:center;color:#072d14;font-weight:900;box-shadow:0 8px 25px rgba(0,0,0,.22);z-index:80}
+.search{width:100%;max-width:350px;padding:13px 15px;border:1px solid var(--line);border-radius:999px;background:#fff;font:inherit}
+@media(max-width:900px){.product-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr;gap:35px}}
+@media(max-width:620px){.topbar .container{justify-content:center}.topbar .hide-mobile{display:none}.navlinks{display:none}.nav-cta{font-size:.8rem}.hero{min-height:560px}.section{padding:65px 0}.section-head{display:block}.section-head p{margin-top:15px}.product-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}footer .container{display:block}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Johannesburg • Quality office furniture & workspace solutions</span><span class="hide-mobile">WhatsApp: 069 558 5700</span></div></div>
+<nav><div class="container nav-inner">
+<a class="brand" href="#home">My<span>'s Office</span></a>
+<div class="navlinks"><a href="#collection">Collection</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<a class="nav-cta" href="https://wa.me/27695585700?text=Hello%20My%20Office%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank">WhatsApp Us</a>
+</div></nav>
+
+<header class="hero" id="home"><div class="container hero-content">
+<div class="kicker">Office furniture • Newtown, Johannesburg</div>
+<h1>Make your workspace work beautifully.</h1>
+<p>A curated collection of desks, chairs, storage, meeting furniture and complete office solutions for businesses, professionals and growing teams.</p>
+<div class="buttons"><a class="btn btn-primary" href="#collection">Explore collection →</a><a class="btn btn-light" href="https://wa.me/27695585700?text=Hello%20My%20Office%2C%20I%20would%20like%20help%20choosing%20office%20furniture." target="_blank">Chat on WhatsApp</a></div>
+</div></header>
+
+<div class="container">
+<div class="stats"><div class="stat"><strong>94+</strong><span>Furniture images in our collection</span></div><div class="stat"><strong>Direct</strong><span>Order & enquire via WhatsApp</span></div><div class="stat"><strong>Newtown</strong><span>Johannesburg, South Africa</span></div></div>
+</div>
+
+<section class="section" id="collection"><div class="container">
+<div class="section-head"><div><div class="kicker">Our collection</div><h2>Office furniture, ready to explore.</h2></div><div><p>Browse the available product images below. For a quotation, availability, dimensions or delivery information, simply tap <b>Order on WhatsApp</b>.</p><input class="search" id="search" placeholder="Search collection…"></div></div>
+<div class="product-grid" id="productGrid"><article class="product-card" data-name="Office Furniture Collection 01">
+      <div class="product-image"><img src="images/product-01.jpg" alt="Office Furniture Collection 01" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 01</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 01. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 02">
+      <div class="product-image"><img src="images/product-02.jpg" alt="Office Furniture Collection 02" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 02</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 02. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 03">
+      <div class="product-image"><img src="images/product-03.jpg" alt="Office Furniture Collection 03" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 03</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 03. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 04">
+      <div class="product-image"><img src="images/product-04.jpg" alt="Office Furniture Collection 04" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 04</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 04. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 05">
+      <div class="product-image"><img src="images/product-05.jpg" alt="Office Furniture Collection 05" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 05</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 05. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 06">
+      <div class="product-image"><img src="images/product-06.jpg" alt="Office Furniture Collection 06" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 06</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 06. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 07">
+      <div class="product-image"><img src="images/product-07.jpg" alt="Office Furniture Collection 07" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 07</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 07. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 08">
+      <div class="product-image"><img src="images/product-08.jpg" alt="Office Furniture Collection 08" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 08</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 08. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 09">
+      <div class="product-image"><img src="images/product-09.jpg" alt="Office Furniture Collection 09" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 09</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 09. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 10">
+      <div class="product-image"><img src="images/product-10.jpg" alt="Office Furniture Collection 10" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 10</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 10. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 11">
+      <div class="product-image"><img src="images/product-11.jpg" alt="Office Furniture Collection 11" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 11</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 11. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 12">
+      <div class="product-image"><img src="images/product-12.jpg" alt="Office Furniture Collection 12" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 12</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 12. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 13">
+      <div class="product-image"><img src="images/product-13.jpg" alt="Office Furniture Collection 13" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 13</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 13. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 14">
+      <div class="product-image"><img src="images/product-14.jpg" alt="Office Furniture Collection 14" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 14</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 14. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 15">
+      <div class="product-image"><img src="images/product-15.jpg" alt="Office Furniture Collection 15" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 15</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 15. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 16">
+      <div class="product-image"><img src="images/product-16.jpg" alt="Office Furniture Collection 16" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 16</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 16. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 17">
+      <div class="product-image"><img src="images/product-17.jpg" alt="Office Furniture Collection 17" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 17</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 17. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 18">
+      <div class="product-image"><img src="images/product-18.jpg" alt="Office Furniture Collection 18" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 18</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 18. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 19">
+      <div class="product-image"><img src="images/product-19.jpg" alt="Office Furniture Collection 19" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 19</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 19. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 20">
+      <div class="product-image"><img src="images/product-20.jpg" alt="Office Furniture Collection 20" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 20</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 20. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 21">
+      <div class="product-image"><img src="images/product-21.jpg" alt="Office Furniture Collection 21" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 21</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 21. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 22">
+      <div class="product-image"><img src="images/product-22.jpg" alt="Office Furniture Collection 22" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 22</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 22. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 23">
+      <div class="product-image"><img src="images/product-23.jpg" alt="Office Furniture Collection 23" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 23</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 23. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 24">
+      <div class="product-image"><img src="images/product-24.jpg" alt="Office Furniture Collection 24" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 24</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 24. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 25">
+      <div class="product-image"><img src="images/product-25.jpg" alt="Office Furniture Collection 25" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 25</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 25. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 26">
+      <div class="product-image"><img src="images/product-26.jpg" alt="Office Furniture Collection 26" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 26</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 26. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 27">
+      <div class="product-image"><img src="images/product-27.jpg" alt="Office Furniture Collection 27" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 27</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 27. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 28">
+      <div class="product-image"><img src="images/product-28.jpg" alt="Office Furniture Collection 28" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 28</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 28. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 29">
+      <div class="product-image"><img src="images/product-29.jpg" alt="Office Furniture Collection 29" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 29</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 29. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 30">
+      <div class="product-image"><img src="images/product-30.jpg" alt="Office Furniture Collection 30" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 30</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 30. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 31">
+      <div class="product-image"><img src="images/product-31.jpg" alt="Office Furniture Collection 31" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 31</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 31. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 32">
+      <div class="product-image"><img src="images/product-32.jpg" alt="Office Furniture Collection 32" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 32</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 32. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 33">
+      <div class="product-image"><img src="images/product-33.jpg" alt="Office Furniture Collection 33" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 33</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 33. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 34">
+      <div class="product-image"><img src="images/product-34.jpg" alt="Office Furniture Collection 34" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 34</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 34. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 35">
+      <div class="product-image"><img src="images/product-35.jpg" alt="Office Furniture Collection 35" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 35</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 35. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 36">
+      <div class="product-image"><img src="images/product-36.jpg" alt="Office Furniture Collection 36" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 36</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 36. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 37">
+      <div class="product-image"><img src="images/product-37.jpg" alt="Office Furniture Collection 37" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 37</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 37. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 38">
+      <div class="product-image"><img src="images/product-38.jpg" alt="Office Furniture Collection 38" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 38</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 38. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 39">
+      <div class="product-image"><img src="images/product-39.jpg" alt="Office Furniture Collection 39" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 39</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 39. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 40">
+      <div class="product-image"><img src="images/product-40.jpg" alt="Office Furniture Collection 40" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 40</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 40. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 41">
+      <div class="product-image"><img src="images/product-41.jpg" alt="Office Furniture Collection 41" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 41</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 41. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 42">
+      <div class="product-image"><img src="images/product-42.jpg" alt="Office Furniture Collection 42" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 42</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 42. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 43">
+      <div class="product-image"><img src="images/product-43.jpg" alt="Office Furniture Collection 43" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 43</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 43. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 44">
+      <div class="product-image"><img src="images/product-44.jpg" alt="Office Furniture Collection 44" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 44</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 44. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 45">
+      <div class="product-image"><img src="images/product-45.jpg" alt="Office Furniture Collection 45" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 45</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 45. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 46">
+      <div class="product-image"><img src="images/product-46.jpg" alt="Office Furniture Collection 46" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 46</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 46. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 47">
+      <div class="product-image"><img src="images/product-47.jpg" alt="Office Furniture Collection 47" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 47</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 47. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 48">
+      <div class="product-image"><img src="images/product-48.jpg" alt="Office Furniture Collection 48" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 48</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 48. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 49">
+      <div class="product-image"><img src="images/product-49.jpg" alt="Office Furniture Collection 49" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 49</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 49. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 50">
+      <div class="product-image"><img src="images/product-50.jpg" alt="Office Furniture Collection 50" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 50</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 50. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 51">
+      <div class="product-image"><img src="images/product-51.jpg" alt="Office Furniture Collection 51" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 51</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 51. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 52">
+      <div class="product-image"><img src="images/product-52.jpg" alt="Office Furniture Collection 52" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 52</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 52. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 53">
+      <div class="product-image"><img src="images/product-53.jpg" alt="Office Furniture Collection 53" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 53</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 53. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 54">
+      <div class="product-image"><img src="images/product-54.jpg" alt="Office Furniture Collection 54" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 54</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 54. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 55">
+      <div class="product-image"><img src="images/product-55.jpg" alt="Office Furniture Collection 55" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 55</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 55. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 56">
+      <div class="product-image"><img src="images/product-56.jpg" alt="Office Furniture Collection 56" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 56</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 56. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 57">
+      <div class="product-image"><img src="images/product-57.jpg" alt="Office Furniture Collection 57" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 57</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 57. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 58">
+      <div class="product-image"><img src="images/product-58.jpg" alt="Office Furniture Collection 58" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 58</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 58. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 59">
+      <div class="product-image"><img src="images/product-59.jpg" alt="Office Furniture Collection 59" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 59</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 59. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 60">
+      <div class="product-image"><img src="images/product-60.jpg" alt="Office Furniture Collection 60" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 60</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 60. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 61">
+      <div class="product-image"><img src="images/product-61.jpg" alt="Office Furniture Collection 61" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 61</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 61. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 62">
+      <div class="product-image"><img src="images/product-62.jpg" alt="Office Furniture Collection 62" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 62</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 62. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 63">
+      <div class="product-image"><img src="images/product-63.jpg" alt="Office Furniture Collection 63" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 63</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 63. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 64">
+      <div class="product-image"><img src="images/product-64.jpg" alt="Office Furniture Collection 64" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 64</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 64. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 65">
+      <div class="product-image"><img src="images/product-65.jpg" alt="Office Furniture Collection 65" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 65</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 65. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 66">
+      <div class="product-image"><img src="images/product-66.jpg" alt="Office Furniture Collection 66" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 66</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 66. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 67">
+      <div class="product-image"><img src="images/product-67.jpg" alt="Office Furniture Collection 67" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 67</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 67. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 68">
+      <div class="product-image"><img src="images/product-68.jpg" alt="Office Furniture Collection 68" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 68</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 68. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 69">
+      <div class="product-image"><img src="images/product-69.jpg" alt="Office Furniture Collection 69" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 69</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 69. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 70">
+      <div class="product-image"><img src="images/product-70.jpg" alt="Office Furniture Collection 70" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 70</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 70. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 71">
+      <div class="product-image"><img src="images/product-71.jpg" alt="Office Furniture Collection 71" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 71</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 71. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 72">
+      <div class="product-image"><img src="images/product-72.jpg" alt="Office Furniture Collection 72" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 72</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 72. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 73">
+      <div class="product-image"><img src="images/product-73.jpg" alt="Office Furniture Collection 73" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 73</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 73. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 74">
+      <div class="product-image"><img src="images/product-74.jpg" alt="Office Furniture Collection 74" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 74</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 74. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 75">
+      <div class="product-image"><img src="images/product-75.jpg" alt="Office Furniture Collection 75" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 75</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 75. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 76">
+      <div class="product-image"><img src="images/product-76.jpg" alt="Office Furniture Collection 76" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 76</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 76. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 77">
+      <div class="product-image"><img src="images/product-77.jpg" alt="Office Furniture Collection 77" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 77</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 77. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 78">
+      <div class="product-image"><img src="images/product-78.jpg" alt="Office Furniture Collection 78" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 78</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 78. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 79">
+      <div class="product-image"><img src="images/product-79.jpg" alt="Office Furniture Collection 79" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 79</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 79. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 80">
+      <div class="product-image"><img src="images/product-80.jpg" alt="Office Furniture Collection 80" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 80</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 80. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 81">
+      <div class="product-image"><img src="images/product-81.jpg" alt="Office Furniture Collection 81" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 81</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 81. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 82">
+      <div class="product-image"><img src="images/product-82.jpg" alt="Office Furniture Collection 82" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 82</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 82. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 83">
+      <div class="product-image"><img src="images/product-83.jpg" alt="Office Furniture Collection 83" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 83</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 83. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 84">
+      <div class="product-image"><img src="images/product-84.jpg" alt="Office Furniture Collection 84" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 84</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 84. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 85">
+      <div class="product-image"><img src="images/product-85.jpg" alt="Office Furniture Collection 85" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 85</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 85. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 86">
+      <div class="product-image"><img src="images/product-86.jpg" alt="Office Furniture Collection 86" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 86</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 86. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 87">
+      <div class="product-image"><img src="images/product-87.jpg" alt="Office Furniture Collection 87" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 87</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 87. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 88">
+      <div class="product-image"><img src="images/product-88.jpg" alt="Office Furniture Collection 88" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 88</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 88. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 89">
+      <div class="product-image"><img src="images/product-89.jpg" alt="Office Furniture Collection 89" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 89</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 89. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 90">
+      <div class="product-image"><img src="images/product-90.jpg" alt="Office Furniture Collection 90" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 90</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 90. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 91">
+      <div class="product-image"><img src="images/product-91.jpg" alt="Office Furniture Collection 91" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 91</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 91. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 92">
+      <div class="product-image"><img src="images/product-92.jpg" alt="Office Furniture Collection 92" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 92</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 92. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 93">
+      <div class="product-image"><img src="images/product-93.jpg" alt="Office Furniture Collection 93" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 93</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 93. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article>
+<article class="product-card" data-name="Office Furniture Collection 94">
+      <div class="product-image"><img src="images/product-94.jpg" alt="Office Furniture Collection 94" loading="lazy"></div>
+      <div class="product-info">
+        <span class="product-tag">Available to order</span>
+        <h3>Office Furniture Collection 94</h3>
+        <p>Quality office furniture and workspace solutions. Contact us for current availability, sizing and pricing.</p>
+        <a class="order-btn" href="https://wa.me/27695585700?text=Hello My&#x27;s Office, I would like to order or enquire about Office Furniture Collection 94. Please send me the price and availability." target="_blank" rel="noopener">Order on WhatsApp <span>→</span></a>
+      </div>
+    </article></div>
+</div></section>
+
+<section class="section about" id="about"><div class="container about-grid">
+<div><div class="kicker">About the business</div><h2>A practical partner for better workspaces.</h2><p>My Office brings together practical office furniture for businesses and professional spaces. We focus on helping customers find furniture that fits their space, purpose and budget, with direct communication through WhatsApp.</p></div>
+<div class="about-list"><div><b>Desks & workstations</b><br><span>Professional setups for individual and team work.</span></div><div><b>Office seating</b><br><span>Chairs and seating options for everyday use.</span></div><div><b>Storage & organisation</b><br><span>Cabinets, shelving and practical storage solutions.</span></div><div><b>Business enquiries</b><br><span>Ask about quantities, availability and quotations.</span></div></div>
+</div></section>
+
+<section class="section" id="contact"><div class="container contact-grid">
+<div><div class="kicker">Visit or contact us</div><h2>Let's set up your workspace.</h2><p>Send us the product you are interested in, and we will respond on WhatsApp with pricing and availability.</p><a class="whatsapp" href="https://wa.me/27695585700?text=Hello%20My%20Office%2C%20I%20would%20like%20a%20quotation." target="_blank">💬 Get a quotation on WhatsApp</a></div>
+<div class="contact-card">
+<div class="contact-row"><div class="icon">WA</div><div><b>WhatsApp</b><br><a href="https://wa.me/27695585700" target="_blank">069 558 5700</a></div></div>
+<div class="contact-row"><div class="icon">⌖</div><div><b>Address</b><br>100 Carr St, Newtown,<br>Johannesburg, 2113</div></div>
+<div class="contact-row"><div class="icon">SA</div><div><b>Service area</b><br>Johannesburg & surrounding areas</div></div>
+</div>
+</div></section>
+
+<footer><div class="container"><span>© 2026 My Office. All rights reserved.</span><span>Office Furniture • Newtown, Johannesburg</span></div></footer>
+<a class="float-wa" href="https://wa.me/27695585700?text=Hello%20My%20Office%2C%20I%20am%20interested%20in%20your%20office%20furniture." target="_blank" aria-label="WhatsApp">WA</a>
+
+<script>
+const search=document.getElementById('search');
+const cards=[...document.querySelectorAll('.product-card')];
+search.addEventListener('input',()=>{
+  const q=search.value.toLowerCase().trim();
+  cards.forEach(card=>card.style.display=card.dataset.name.toLowerCase().includes(q)?'':'none');
+});
+</script>
+</body>
+</html>
